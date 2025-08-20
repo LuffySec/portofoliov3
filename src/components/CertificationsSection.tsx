@@ -9,7 +9,7 @@ const certifications = [
     title: "Medallion For Excellent (MOE) Bidang Teknologi Keamanan Siber",
     issuer: "Pusat Prestasi Nasional (Purpresnas)",
     date: "2025",
-    image: "/src/assets/1.png",
+    image: "./src/assets/1.png",
     description: "National recognition for outstanding achievements in cybersecurity technology, demonstrating exceptional skills and dedication in the field.",
     skills: ["Cyber Security", "CTF"]
   },
