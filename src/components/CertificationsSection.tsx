@@ -4,12 +4,15 @@ import { Badge } from '@/components/ui/badge';
 import { ChevronLeft, ChevronRight, Award, Calendar, ExternalLink } from 'lucide-react';
 import { useIntersectionObserver } from '@/hooks/use-intersection-observer';
 
+// Ensure assets resolve correctly in production builds (e.g., GitHub Pages)
+const certImage = (n: number) => new URL(`../assets/${n}.png`, import.meta.url).href;
+
 const certifications = [
   {
     title: "Medallion For Excellent (MOE) Bidang Teknologi Keamanan Siber",
     issuer: "Pusat Prestasi Nasional (Purpresnas)",
     date: "2025",
-    image: "./src/assets/1.png",
+    image: certImage(1),
     description: "National recognition for outstanding achievements in cybersecurity technology, demonstrating exceptional skills and dedication in the field.",
     skills: ["Cyber Security", "CTF"]
   },
@@ -17,7 +20,7 @@ const certifications = [
     title: "BNSP Certified Cyber Security",
     issuer: "Badan Nasional Sertifikasi Profesi (BNSP)",
     date: "2025",
-    image: "/src/assets/2.png",
+    image: certImage(2),
     description: "Professional national certification that validates cybersecurity competencies and meets Indonesian professional standards.",
     skills: ["Cyber Security", "Threat Intelligence"]
   },
@@ -25,7 +28,7 @@ const certifications = [
     title: "Practical Web Hacking",
     issuer: "The Cyber Mentor (TCM) Security Academy",
     date: "2024",
-    image: "/src/assets/3.png",
+    image: certImage(3),
     description: "Hands-on training in web application hacking techniques, covering vulnerability assessment and exploitation methods.",
     skills: ["Web Exploitation"]
   },
@@ -33,7 +36,7 @@ const certifications = [
     title: "Juara 3 Web Design Competition",
     issuer: "Politeknik Negeri Ujung Pandang (PNUP)",
     date: "2024",
-    image: "/src/assets/4.png",
+    image: certImage(4),
     description: "Third place achievement in web design competition, showcasing creative frontend development and design skills.",
     skills: ["Web Design", "Frontend"]
   },
@@ -41,7 +44,7 @@ const certifications = [
     title: "Cyber Security Officer",
     issuer: "Telkom Indonesia",
     date: "2024",
-    image: "/src/assets/5.png",
+    image: certImage(5),
     description: "Certification as a cybersecurity officer with focus on SOC analysis, security engineering, and incident response.",
     skills: ["Cyber Security", "SOC Analyst", "Security Engineer"]
   },
@@ -49,7 +52,7 @@ const certifications = [
     title: "Responsive Web Design",
     issuer: "freeCodeCamp",
     date: "2024",
-    image: "/src/assets/6.png",
+    image: certImage(6),
     description: "Certification in responsive web design principles, ensuring websites work seamlessly across all devices and screen sizes.",
     skills: ["Web Development", "Frontend"]
   },
@@ -57,7 +60,7 @@ const certifications = [
     title: "Security Engineer",
     issuer: "TryHackMe",
     date: "2024",
-    image: "/src/assets/7.png",
+    image: certImage(7),
     description: "Comprehensive security engineering training covering secure development lifecycle and threat management practices.",
     skills: ["Cyber Security", "SDLC", "Threat & Vulnerability Management"]
   },
@@ -65,7 +68,7 @@ const certifications = [
     title: "SOC Analyst Level 1",
     issuer: "TryHackMe",
     date: "2024",
-    image: "/src/assets/8.png",
+    image: certImage(8),
     description: "Level 1 SOC analyst certification focusing on threat hunting, SIEM operations, and incident handling procedures.",
     skills: ["SOC Analyst", "Threat Hunting", "SIEM", "SOAR", "Incident Handling"]
   },
@@ -73,7 +76,7 @@ const certifications = [
     title: "Cyber Security Analyst (CySA+) Training",
     issuer: "Dion Training",
     date: "2024",
-    image: "/src/assets/9.png",
+    image: certImage(9),
     description: "CySA+ training program covering data analysis, incident response, and threat analysis methodologies.",
     skills: ["Data Analysis", "Incident Response", "Threat Analysis"]
   },
@@ -81,7 +84,7 @@ const certifications = [
     title: "Ethical Hacking Essentials | EHE",
     issuer: "EC-Council",
     date: "2023",
-    image: "/src/assets/10.png",
+    image: certImage(10),
     description: "Foundation certification in ethical hacking, providing core understanding of cybersecurity principles and techniques.",
     skills: ["Ethical Hacking", "Cyber Security"]
   },
@@ -89,7 +92,7 @@ const certifications = [
     title: "SOC Analyst",
     issuer: "LetsDefend",
     date: "2023",
-    image: "/src/assets/11.png",
+    image: certImage(11),
     description: "Practical SOC analyst training with hands-on experience in security incident handling and response.",
     skills: ["SOC Analyst", "Incident Handling"]
   },
@@ -97,7 +100,7 @@ const certifications = [
     title: "Practical Ethical Hacking",
     issuer: "The Cyber Mentor (TCM) Security Academy",
     date: "2023",
-    image: "/src/assets/12.png",
+    image: certImage(12),
     description: "Hands-on ethical hacking course teaching practical techniques and methodologies for security testing.",
     skills: ["Ethical Hacking"]
   },
@@ -105,7 +108,7 @@ const certifications = [
     title: "Open Source Intelligence (OSINT) Training",
     issuer: "The Cyber Mentor (TCM) Security Academy",
     date: "2023",
-    image: "/src/assets/13.png",
+    image: certImage(13),
     description: "OSINT training covering information gathering techniques and reconnaissance methods for security assessments.",
     skills: ["OSINT"]
   },
@@ -113,7 +116,7 @@ const certifications = [
     title: "Linux Privilege Escalation",
     issuer: "The Cyber Mentor (TCM) Security Academy",
     date: "2023",
-    image: "/src/assets/14.png",
+    image: certImage(14),
     description: "Specialized training in Linux privilege escalation techniques and system security testing.",
     skills: ["Privilege Escalation"]
   },
@@ -121,7 +124,7 @@ const certifications = [
     title: "Practical Bug Bounty",
     issuer: "The Cyber Mentor (TCM) Security Academy",
     date: "2023",
-    image: "/src/assets/15.png",
+    image: certImage(15),
     description: "Practical bug bounty training covering web vulnerability discovery and responsible disclosure practices.",
     skills: ["Bug Bounty", "Web Exploitation"]
   },
@@ -129,7 +132,7 @@ const certifications = [
     title: "Cyber Threat Hunting Training",
     issuer: "Active Countermeasures",
     date: "2024",
-    image: "/src/assets/16.png",
+    image: certImage(16),
     description: "Threat hunting training program teaching proactive techniques to detect hidden security threats.",
     skills: ["Threat Hunt"]
   },
@@ -137,7 +140,7 @@ const certifications = [
     title: "Red Teaming",
     issuer: "TryHackMe",
     date: "2023",
-    image: "/src/assets/17.png",
+    image: certImage(17),
     description: "Red teaming certification covering attack simulation and security testing methodologies.",
     skills: ["Red Team"]
   }
