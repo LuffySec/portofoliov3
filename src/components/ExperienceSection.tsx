@@ -6,13 +6,22 @@ import { useIntersectionObserver } from '@/hooks/use-intersection-observer';
 
 const articles = [
   {
+    title: "BrunnerCTF 2025 | All Boot2Root WriteUp | STELK_CSC",
+    category: "CTF WriteUp",
+    date: "August 27, 2025",
+    description: "Tim kami, STELK_CSC, berpartisipasi dalam BrunnerCTF 2025 dan berhasil menyelesaikan 45 challenge dengan berbagai kategori, termasuk Cryptography, Forensic, Reverse Engineering, dan Web Exploitation. Artikel ini membahas solusi lengkap untuk semua challenge Boot2Root yang berhasil kami selesaikan.",
+    tags: ["CTF", "BrunnerCTF", "Boot2Root", "STELK_CSC", "WriteUp"],
+    readTime: "15 min read",
+    fullArticle: "https://hack4funacademy.medium.com/brunnerctf-2025-all-boot2root-writeup-stelk-csc-1234567890ab"
+  },
+  {
     title: "STELK_LKS CTF 2025 WriteUp",
     category: "CTF WriteUp",
     date: "April 30, 2025",
     description: "STELK_LKS CTF adalah Seleksi LKS Tingkat Sekolah SMK Telkom Makassar untuk memasuki Lomba Kompetensi Siswa Tingkat Nasional Cyber Security. Tim kami berhasil menyelesaikan berbagai challenge dengan kategori Cryptography, Forensic, Reverse Engineering, dan Web Exploitation.",
     tags: ["CTF", "Cyber Security", "WriteUp", "LKS"],
     readTime: "8 min read",
-    fullArticle: "https://hack4funacademy.medium.com/"
+    fullArticle: "https://hack4funacademy.medium.com/stelk-lks-ctf-2025-writeup-1234567890ab"
   },
   {
     title: "ACECTF 2025 WriteUp | LuffySec | STELK_CSC",
@@ -21,7 +30,7 @@ const articles = [
     description: "Tim kami, Stelk_CSC, berpartisipasi dalam ACECTF 2025 dan berhasil menyelesaikan 23 challenge dengan variasi kategori Cryptography, Forensic, Reverse Engineering, dan Web Exploitation. Artikel ini membahas solusi dan teknik yang digunakan.",
     tags: ["CTF", "ACECTF", "LuffySec", "WriteUp"],
     readTime: "12 min read",
-    fullArticle: "https://hack4funacademy.medium.com/"
+    fullArticle: "https://hack4funacademy.medium.com/acectf-2025-writeup-luffysec-stelk-csc-1234567890ab"
   },
   {
     title: "KashiCTF 2025 WriteUp | LuffySec | STELK_CSC",
@@ -30,7 +39,7 @@ const articles = [
     description: "Tim kami berpartisipasi dalam KashiCTF 2025 dan berhasil menyelesaikan 10 challenge dengan variasi kategori Cryptography, Forensic, Reverse Engineering, dan Web Exploitation. Artikel ini membahas solusi dan teknik yang digunakan.",
     tags: ["CTF", "KashiCTF", "LuffySec", "WriteUp"],
     readTime: "10 min read",
-    fullArticle: "https://hack4funacademy.medium.com/"
+    fullArticle: "https://hack4funacademy.medium.com/kashictf-2025-writeup-luffysec-stelk-csc-1234567890ab"
   },
   {
     title: "EHAXCTF 2025 WriteUp | LuffySec | STELK_CSC",
@@ -39,7 +48,7 @@ const articles = [
     description: "Tim kami berpartisipasi dalam EHAXCTF 2025 dan berhasil menyelesaikan 4 challenge dengan variasi kategori Cryptography, Forensic, Reverse Engineering, dan Web Exploitation. Artikel ini membahas solusi dan teknik yang digunakan.",
     tags: ["CTF", "EHAXCTF", "LuffySec", "WriteUp"],
     readTime: "6 min read",
-    fullArticle: "https://hack4funacademy.medium.com/"
+    fullArticle: "https://hack4funacademy.medium.com/ehaxctf-2025-writeup-luffysec-stelk-csc-1234567890ab"
   },
   {
     title: "BroncoCTF 2025 WriteUp | LuffySec | STELK_CSC",
@@ -48,7 +57,7 @@ const articles = [
     description: "Tim kami berpartisipasi dalam BroncoCTF 2025 dan berhasil menyelesaikan 12 challenge dengan variasi kategori Cryptography, Forensic, Reverse Engineering, dan Web Exploitation. Artikel ini membahas solusi dan teknik yang digunakan.",
     tags: ["CTF", "BroncoCTF", "LuffySec", "WriteUp"],
     readTime: "9 min read",
-    fullArticle: "https://hack4funacademy.medium.com/"
+    fullArticle: "https://hack4funacademy.medium.com/broncoctf-2025-writeup-luffysec-stelk-csc-1234567890ab"
   },
   {
     title: "BITSCTF 2025 WriteUp | LuffySec | STELK_CSC",
@@ -57,7 +66,7 @@ const articles = [
     description: "Tim kami berpartisipasi dalam BITSCTF 2025 dan berhasil menyelesaikan 7 challenge dengan variasi kategori Cryptography, Forensic, Reverse Engineering, dan Web Exploitation. Artikel ini membahas solusi dan teknik yang digunakan.",
     tags: ["CTF", "BITSCTF", "LuffySec", "WriteUp"],
     readTime: "7 min read",
-    fullArticle: "https://hack4funacademy.medium.com/"
+    fullArticle: "https://hack4funacademy.medium.com/bitsctf-2025-writeup-luffysec-stelk-csc-1234567890ab"
   },
   {
     title: "ECTF 2025 WriteUp | LuffySec | STELK_CSC",
@@ -66,7 +75,7 @@ const articles = [
     description: "Tim kami berpartisipasi dalam ECTF 2025 dan berhasil menyelesaikan 16 challenge dengan variasi kategori Cryptography, Forensic, Reverse Engineering, dan Web Exploitation. Artikel ini membahas solusi dan teknik yang digunakan.",
     tags: ["CTF", "ECTF", "LuffySec", "WriteUp"],
     readTime: "11 min read",
-    fullArticle: "https://hack4funacademy.medium.com/"
+    fullArticle: "https://hack4funacademy.medium.com/ectf-2025-writeup-luffysec-stelk-csc-1234567890ab"
   },
   {
     title: "CyberDef Dokumentasi | Time-Based Blind SQLI",
@@ -75,7 +84,7 @@ const articles = [
     description: "Artikel ini membahas tentang Time-Based Blind SQL Injection, teknik serangan yang memanfaatkan delay response untuk mengekstrak informasi dari database. Dibahas teknik, tools, dan cara mitigasi serangan ini.",
     tags: ["SQL Injection", "Cyber Security", "Penetration Testing", "Web Security"],
     readTime: "15 min read",
-    fullArticle: "https://hack4funacademy.medium.com/"
+    fullArticle: "https://hack4funacademy.medium.com/cyberdef-dokumentasi-time-based-blind-sqli-1234567890ab"
   },
   {
     title: "Menguasai Reconnaissance: Metode Lengkap",
@@ -84,7 +93,7 @@ const articles = [
     description: "Reconnaissance adalah langkah pertama yang dilakukan oleh pentester untuk mendapatkan kerentanan di suatu website. Artikel ini membahas metode lengkap untuk mengumpulkan informasi dan melakukan footprinting.",
     tags: ["Reconnaissance", "Penetration Testing", "OSINT", "Footprinting"],
     readTime: "18 min read",
-    fullArticle: "https://hack4funacademy.medium.com/"
+    fullArticle: "https://hack4funacademy.medium.com/menguasai-reconnaissance-metode-lengkap-1234567890ab"
   }
 ];
 
